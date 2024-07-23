@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Switch
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:textSize="16sp"
+        android:text="@string/opt_openkeys" />
+    <Switch
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:textSize="16sp"
+        android:text="@string/opt_foto_fullscreen" />
+    <TextView
+        android:id="@+id/text_size"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/opt_textsize"
+        android:textColor="#111111"
+        android:textSize="16sp" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/opt_text_example"
+        android:textColor="#111111"
+        android:textSize="20sp" />
+</LinearLayout>

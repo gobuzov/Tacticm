@@ -1,0 +1,44 @@
+[{
+"header": "Our Header Medicine Dictionary",
+"desc": "with a little a help of my friends",
+"tags": ["rana","head"],
+"item":{
+        "type": 1,
+        "title": "Item title",
+        	"content": "tactical-_medicine1-comp.png"
+  }
+},
+{
+"header": "Our Header Medicine Dictionary",
+"desc": "with a little a help of my friends",
+"tags": ["rana","ponos","head"],
+"item":{
+        "type": 1,
+        "title": "Item title",
+        	"content": "tactical-_medicine2-comp.png"
+  }
+},
+{
+"header": "3 Our Header Medicine Dictionary",
+"desc": "with a little a help of my friends",
+"tags": ["rana","ponos","head"],
+"item":{
+        "type": 1,
+        "title": "Item title",
+        	"content": "tactical-_medicine3-comp.png"
+  }
+}
+]
+
+ОТМС - организация и тактика медицинской службы. Фундаментальный труд по вопросам медицинского обеспечения.
+ВПХ - военно-полевая хирургия
+ППИ - пакет перевязочный индивидуальный
+ИПП - индивидуальный противохимический пакет ОЦК - объём циркулирующей крови
+ПХО - первичная хирургическая обработка
+ПНВ - прибор ночного видения
+ЖБОБ - жгут — бинт — обезболивание — больница (комплекс мер первой доврачебной помощи при тяжёлых ранениях)
+ООН - обработка раны — остановка крови — наблюдение (комплекс мер первой доврачебной помощи при лёгких ранениях)
+БПЛА - 
+ПМП - 
+АГС - 
+ТВД - 

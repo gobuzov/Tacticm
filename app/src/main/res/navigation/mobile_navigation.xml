@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ru.tacticm.BookFragment"
+        android:label="@string/title_book"
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="ru.tacticm.BookmarkFragment"
+        android:label="@string/title_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ru.tacticm.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="ru.tacticm.InfoFragment"
+        android:label="@string/title_information"
+        tools:layout="@layout/fragment_info" />
+</navigation>

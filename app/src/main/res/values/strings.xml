@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TacticM</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="title_book">Книга</string>
+    <string name="title_bookmark">Закладки</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_information">Инфо</string>
+    <string name="nobookmark">Список закладок пуст.
+        Вы ещё не отметили ни одной закладки. Чтобы отметить закладку, нажмите на иконку закладки в правом нижнем углу. </string>
+    <string name="ok">Ok</string>
+
+    <string name="cancel">Отмена</string>
+    <string name="look_video">Смотреть</string>
+    <!-- Strings Settings -->
+    <string name="opt_openkeys">Показывать клавиатуру при старте</string>
+    <string name="opt_foto_fullscreen">Фотографии ограничены экраном</string>
+    <string name="opt_textsize">Размер шрифта</string>
+    <string name="opt_text_example">Пример текста пример текста пример текста пример текста пример текста пример текста.</string>
+    <!-- Strings info fragment -->
+    <string name="app_caption">Тактическая медицина. V.1.1</string>
+    <string name="app_desc">По материалам Юрия Евича</string>
+    <string name="lessons">Курсы по тактической медицине</string>
+    <string name="call_phone">Звонок на телефон</string>
+    <string name="site">Переход на сайт в интернете</string>
+    <string name="need_internet">Необходим доступ в интернет</string>
+    <string name="vk">Переход на группу ВКонтакте</string>
+    <string name="telegram">Переход на канал в Телеграмме</string>
+    <string name="video">Переход на Youtube канал</string>
+    <string name="app_create2">Сообщить об ошибке, </string>
+    <string name="app_create">Создание, защита приложений</string>
+    <string name="app_email">E-mail: rxgo@yandex.ru</string>
+    <string name="phone_link">+74951207006</string>
+    <string name="phone_text">+7 (495) 120-70-06</string>
+    <string name="site_link">https://www.tacticm.ru</string>
+    <string name="vk_link">https://vk.com/tacticalmed</string>
+    <string name="telegram_link">https://t.me/tvtacticalmed</string>
+    <string name="youtube_link">https://www.youtube.com/channel/UCwTwfwTDCATH8h9NyTrLlMg</string>
+    <string name="gid_text">Учебные материалы</string>
+    <string name="gid_link">https://www.tmgid.ru</string>
+    <string name="rutube_text">Rutube</string>
+    <string name="rutube_link">https://rutube.ru/channel/30323993/</string>
+    <string name="myemail">rxgo@yandex.ru</string>
+    <string name="mysubj">Из приложения тактическая медицина</string>
+    <string name="mybody">Привет!</string>
+    <string name="noemail">E-mail клиент не найден!</string>
+    <string name="sendby">Послать E-mail, используя:</string>
+    <string name="add_bookmark">Добавлено в закладки </string>
+    <string name="del_bookmark">Убрано из закладок</string>
+    <string name="search_hint">Тема, термин, слово</string>
+    <string name="video_hint">Внимание!
+        Просмотр видео потребляет значительный интернет траффик!</string>
+    <string name="app_hint">Регистрация в приложении отсутствует.
+Приложение не собирает никакую информацию и не требует наличия интернет соединения.
+Однако приложение содержит ссылки на внешние ресурсы, например на Youtube канал для просмотра видео
+    </string>
+    <string name="share_via">Поделиться через </string>
+</resources>
