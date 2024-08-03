@@ -1,6 +1,6 @@
 package ru.tacticm;
 
-import com.google.gson.Gson;
+import java.util.*;
 
 public class Card {
     String i = "";  // id
@@ -10,14 +10,14 @@ public class Card {
 
     boolean mark = false;
     String prev, next; // ids
-    public static Card fromJson(String json){
-        Card cd = null;
-        try {
-             cd = new Gson().fromJson(json, Card.class);
-        }catch (Exception exc){
-            exc.printStackTrace();
-        }
-        return cd;
+    public Card (Hashtable ht){
+        i = (String)ht.get("i");
+        h = ((String)ht.get("h")).toUpperCase();
+        c = (String)ht.get("c");
+        Vector v = (Vector)ht.get("t");
+        t = new String[v.size()];
+        for (int i=0; i<v.size();i++)
+            t[i] = ((String)v.get(i)).toLowerCase();
     }
 
     public Card(String h, String id, String[] t, String content){ // not used while

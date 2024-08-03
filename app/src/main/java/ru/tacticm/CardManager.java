@@ -1,13 +1,6 @@
 package ru.tacticm;
 
-import java.lang.reflect.Type;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.ArrayList;
-import java.util.List;
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import java.util.*;
 
 public class CardManager {
     private static ArrayList<Card> list = new ArrayList<>(); // all cards
@@ -16,16 +9,17 @@ public class CardManager {
     public static void initStore(){
         if (table.isEmpty()) {
             String json = Tools.loadAssetString("cards.txt");
-            Type listType = new TypeToken<List<Card>>(){}.getType();
-            list = new Gson().fromJson(json, listType);
-            int last = list.size()-1;
-            for (int i=0; i<list.size(); i++){
-                Card cd = list.get(i);
-                cd.h = cd.h.toUpperCase();
+            //
+            Jlen jl = new Jlen(json);
+            Vector v = (Vector)jl.parse();
+            for (int i=0; i<v.size(); i++) {
+                Card cd = new Card((Hashtable) v.get(i));
+                list.add(cd);
                 table.put(cd.i, cd);
-                for (int j = 0; j < cd.t.length; j++) {
-                    cd.t[j] = cd.t[j].toLowerCase();
-                }
+            }
+            int last = v.size()-1;
+            for (int i=0; i<list.size(); i++) {
+                Card cd = list.get(i);
                 cd.prev = 0==i ? null : list.get(i-1).i;
                 cd.next = last==i ? null : list.get(i+1).i;
             }

@@ -1,18 +1,14 @@
 package ru.tacticm;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class ResourceManager {
-    private static Hashtable<String, String> resources = new Hashtable<>(); // for access to pictures & video
+    private static Hashtable resources = new Hashtable(); // for access to pictures & video
     private static void initStore(){
         String json = Tools.loadAssetString("res.txt");
-        Type tableType = new TypeToken<Hashtable<String, String>>(){}.getType();
-        resources = new Gson().fromJson(json, tableType);
+        Jlen jl = new Jlen(json);
+        resources = (Hashtable)jl.parse();
     }
     /**
      * @param s [фото 8–10; рис. 1; фото 11, 12]
@@ -45,7 +41,7 @@ public class ResourceManager {
                     throw new ResourceException("wrong numbers range: first must to be less than second");
                 }
                 for (int i=min; i<=max; i++){
-                    String path = resources.get(ch.concat(Integer.toString(i)));
+                    String path = (String)(resources.get(ch.concat(Integer.toString(i))));
                     if (null!=path){
                         list.add(new Resource(caption.concat(" ").concat(Integer.toString(i)), path));
                     }
@@ -55,7 +51,7 @@ public class ResourceManager {
         }
         String[] array = s.split(",");
         for (int i=0; i<array.length; i++){
-            String path = resources.get(ch.concat(array[i].trim()));
+            String path = (String)(resources.get(ch.concat(array[i].trim())));
             if (null!=path){
                 list.add(new Resource(caption.concat(" ").concat(array[i].trim()), path));
             }

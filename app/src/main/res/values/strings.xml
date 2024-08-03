@@ -17,7 +17,7 @@
     <string name="opt_textsize">Размер шрифта</string>
     <string name="opt_text_example">Пример текста пример текста пример текста пример текста пример текста пример текста.</string>
     <!-- Strings info fragment -->
-    <string name="app_caption">Тактическая медицина. V.1.1</string>
+    <string name="app_caption">Тактическая медицина. V.1.2</string>
     <string name="app_desc">По материалам Юрия Евича</string>
     <string name="lessons">Курсы по тактической медицине</string>
     <string name="call_phone">Звонок на телефон</string>
