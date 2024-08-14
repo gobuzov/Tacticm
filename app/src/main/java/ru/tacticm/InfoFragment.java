@@ -38,7 +38,7 @@ public class InfoFragment extends Fragment implements View.OnClickListener{
         actions.put(R.id.buttonrutube, getString(R.string.rutube_link));
         return v;
     }
-    MediaPlayer m = new MediaPlayer(); /*assume, somewhere in the global scope...*/
+    MediaPlayer m = new MediaPlayer();
     int clicks = 0;
     public void playBeep() {
         try {
@@ -62,7 +62,7 @@ public class InfoFragment extends Fragment implements View.OnClickListener{
         int id = view.getId();
         if (R.id.pic==id){
             clicks++;
-            if (12==clicks) {
+            if (10==clicks) {
                 clicks = 0;
                 playBeep();
             }

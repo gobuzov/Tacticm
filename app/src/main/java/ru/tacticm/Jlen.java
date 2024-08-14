@@ -1,19 +1,12 @@
 package ru.tacticm;
 
 import java.util.*;
-/**
- * Created with IntelliJ IDEA.
- * User: ago
- * Date: 21.10.14
- * Time: 11:11
- * To change this template use File | Settings | File Templates.
- */
+
 public class Jlen {
     String str;
-    int i;
+    int i = 0;
     public Jlen (String str){
         this.str = str;
-        i = 0;
     }
     public Object parse(){
         String s = null;
